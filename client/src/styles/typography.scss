@@ -1,0 +1,68 @@
+.heading-primary {
+    font-size: 3.8rem;
+    line-height: 1.1;
+    margin-bottom: 5rem;
+
+    @include respond(phone) {
+        font-size: 3.25rem;
+    }
+}
+
+.highlight {
+    color: $base-color;
+}
+
+.heading-secondary {
+    font-size: 2.35rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin: 0 auto;
+}
+.heading-tertiary {
+    font-weight: 500;
+    letter-spacing: 0.25rem;
+    color: $base-color;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+
+.section-paragraph {
+    margin: 1rem 0;
+    font-size: 1.1rem;
+    color: $gray-light;
+
+    .section-paragraph {
+        max-width: 100%;
+    }
+}
+
+.btn {
+    border: none;
+    letter-spacing: 0.05rem;
+    color: #fff;
+    padding: 0.7rem 1.6rem;
+    font-size: 1rem;
+    text-transform: capitalize;
+    border-radius: 0.5rem;
+    transition: all 0.25s ease-in-out;
+    display: inline-block;
+
+    &:hover {
+        filter: brightness(0.9);
+    }
+
+    &__primary {
+        background-image: linear-gradient(to right, $base-color-light, $base-color);
+    }
+    &__secondary {
+        background: #222;
+
+        &:hover {
+            filter: brightness(1.25);
+        }
+    }
+
+    @include respond(phone) {
+        font-size: 1.25rem;
+    }
+}
