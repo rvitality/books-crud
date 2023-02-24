@@ -53,6 +53,17 @@ app.put("/books/:id", (req, res) => {
     });
 });
 
+app.delete("/books/:id", (req, res) => {
+    const bookId = req.params.id;
+    const q = "DELETE FROM books where id = ?";
+
+    db.query(q, [bookId], (err, data) => {
+        if (err) return res.json(err);
+
+        return res.json("Book has been successfully deleted.");
+    });
+});
+
 app.listen(8800, () => {
     console.log("Connected to backend!");
 });
