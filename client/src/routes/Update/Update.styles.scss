@@ -1,0 +1,25 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: fit-content;
+
+    input {
+        width: 20rem;
+        padding: 10px;
+        border: 1px solid gray;
+        font-size: 1.15rem;
+    }
+
+    textarea {
+        padding: 10px;
+    }
+
+    button {
+        border: none;
+        padding: 1rem 2rem;
+        background-color: #000;
+        font-size: 1.1rem;
+        font-weight: 400;
+    }
+}
